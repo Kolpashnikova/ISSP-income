@@ -39,14 +39,14 @@ replace PersInc=v249*0.211067315 if Country==376 & v249!=999997 & v249!=999998 &
 replace PersInc=v249*1000*0.007975244/12 if Country==392 & v249!=999997 & v249!=999998 & v249!=999999 /*Japan*/
 replace PersInc=v249*1.136871353 if Country==428 & v249!=999997 & v249!=999998 & v249!=999999 /*Latvia*/
 replace PersInc=v249*0.103563002 if Country==484 & v249!=999997 & v249!=999998 & v249!=999999 /*Mexico*/
-replace PersInc=v249*0.941130411 if Country==528 & v249!=0 & v249!=999997 & v249!=999998 & v249!=999999 /*Netherlands*/
+replace PersInc=v249*0.941130411 if Country==528 & v249!=0 & v249!=999997 & v249!=999998 & v249!=999999 /*Netherlands -- no obs*/
 replace PersInc=v249*0.941130411 if Country==528 & v249!=999997 & v249!=999998 & v249!=999999 /*Netherlands*/
 replace PersInc=v249*0.125253968/12 if Country==578 & v249!=999996 & v249!=999997 & v249!=999998 & v249!=999999 /*Norway*/
 replace PersInc=1000000*0.125253968/12 if Country==578 & v249==999996 & v249!=999997 & v249!=999998 & v249!=999999 /*Norway*/
 replace PersInc=v249*0.0188 if Country==608 & v249!=999997 & v249!=999998 & v249!=999999 /*Philippines*/
 replace PersInc=v249*0.245096057 if Country==616 & v249!=999997 & v249!=999998 & v249!=999999 /*Poland*/
 replace PersInc=v249*0.941130411 if Country==620 & v249!=999997 & v249!=999998 & v249!=999999 /*Portugal*/
-replace PersInc=v249*0.03189947 if Country==643 & v249!=999997 & v249!=999998 & v249!=999999 /*Russia -- there are many zero observations*/
+replace PersInc=v249*0.03189947 if Country==643 & v249!=999997 & v249!=999998 & v249!=999999 /*Russia*/
 replace PersInc=v249*0.664640841 if Country==703 & v249!=999997 & v249!=999998 & v249!=999999 /*Slovakia*/
 replace PersInc=v249*0.00388742 if Country==705 & v249!=999997 & v249!=999998 & v249!=999999 /*Slovenia*/
 replace PersInc=v249*0.941130411 if Country==724 & v249!=999997 & v249!=999998 & v249!=999999 /*Spain*/
@@ -68,7 +68,7 @@ replace HhldInc=v250*0.001451512 if Country==152 & v250!=999996 & v250!=999997 &
 replace HhldInc=1000000*0.001451512 if Country==152 & v250==999996 & v250!=999997 & v250!=999998 & v250!=999999 /*Chile*/
 replace HhldInc=v250*0.03054506 if Country==203 & v250!=999997 & v250!=999998 & v250!=999999 /*Czech Republic*/
 replace HhldInc=v250*0.126667033/12 if Country==208 & v250!=999997 & v250!=999998 & v250!=999999 /*Denmark*/
-replace HhldInc=v250*0.941130411 if Country==246 & v250!=999997 & v250!=999998 & v250!=999999 /*Finland --  it only contains information for one person, drop from the analysis*/
+replace HhldInc=v250*0.941130411 if Country==246 & v250!=999997 & v250!=999998 & v250!=999999 /*Finland*/
 replace HhldInc=v250*0.941130411 if Country==250 & v250!=999997 & v250!=999998 & v250!=999999 /*France*/
 replace HhldInc=v250*0.941130411 if Country==276 & v250!=999997 & v250!=999998 & v250!=999999 /*Germany*/
 replace HhldInc=v250*1.498749294/12 if Country==826 & v250!=999997 & v250!=999998 & v250!=999999 /*UK*/
@@ -85,7 +85,7 @@ replace HhldInc=1000000*0.125253968/12 if Country==578 & v250==999996 & v250!=99
 replace HhldInc=v250*0.0188 if Country==608 & v250!=999997 & v250!=999998 & v250!=999999 /*Philippines*/
 replace HhldInc=v250*0.245096057 if Country==616 & v250!=999997 & v250!=999998 & v250!=999999 /*Poland*/
 replace HhldInc=v250*0.941130411 if Country==620 & v250!=999997 & v250!=999998 & v250!=999999 /*Portugal*/
-replace HhldInc=v250*0.03189947 if Country==643 & v250!=999997 & v250!=999998 & v250!=999999 /*Russia -- there are many zero observations*/
+replace HhldInc=v250*0.03189947 if Country==643 & v250!=999997 & v250!=999998 & v250!=999999 /*Russia*/
 replace HhldInc=v250*0.664640841 if Country==703 & v250!=999997 & v250!=999998 & v250!=999999 /*Slovakia*/
 replace HhldInc=v250*0.00388742 if Country==705 & v250!=999997 & v250!=999998 & v250!=999999 /*Slovenia*/
 replace HhldInc=v250*0.941130411 if Country==724 & v250!=999997 & v250!=999998 & v250!=999999 /*Spain*/
@@ -114,7 +114,7 @@ replace PersInc=BG_RINC*0.65700864 if Country==100 & BG_RINC<999990 /*Bulgaria*/
 replace PersInc=CL_RINC*0.00205562 if Country==152 & CL_RINC<9999990 /*Chile*/
 replace PersInc=CZ_RINC*0.051079045 if Country==203 & CZ_RINC<999990 /*Czech Republic*/
 replace PersInc=DK_RINC*0.172637746/12 if Country==208 & DK_RINC<999990 /*Denmark*/
-replace PersInc=FI_RINC*1.284861505 if Country==246 & FI_RINC<999990 /*Finland --  it only contains information for one person, drop from the analysis*/
+replace PersInc=FI_RINC*1.284861505 if Country==246 & FI_RINC<999990 /*Finland*/
 replace PersInc=FR_RINC*1.284861505 if Country==250 & FR_RINC<999990 /*France*/
 replace PersInc=DE_RINC*1.284861505 if Country==276 & DE_RINC<999990 /*Germany*/
 replace PersInc=GB_RINC*1.579661542 if Country==826 & ///
@@ -133,7 +133,7 @@ replace PersInc=PH_RINC*0.01913837 if Country==608 & PH_RINC<999990 /*Philippine
 replace PersInc=PL_RINC*0.307074191 if Country==616 & ///
 	PL_RINC<999990 /*Poland*/
 replace PersInc=PT_RINC*1.284861505 if Country==620 & PT_RINC<999990 /*Portugal*/
-replace PersInc=RU_RINC*0.032425599 if Country==643 & RU_RINC<999990 /*Russia -- there are many zero observations*/
+replace PersInc=RU_RINC*0.032425599 if Country==643 & RU_RINC<999990 /*Russia*/
 replace PersInc=SK_RINC*1.284861505 if Country==703 & SK_RINC<999990 /*Slovakia*/
 replace PersInc=SI_RINC*1.284861505 if Country==705 & SI_RINC<999990 /*Slovenia*/
 replace PersInc=ES_RINC*1.284861505 if Country==724 & ES_RINC<999990 /*Spain*/
@@ -153,7 +153,7 @@ replace HhldInc=BG_INC*0.65700864 if Country==100 & BG_INC<999990 /*Bulgaria*/
 replace HhldInc=CL_INC*0.00205562 if Country==152 & CL_INC<9999990 /*Chile*/
 replace HhldInc=CZ_INC*0.051079045 if Country==203 & CZ_INC<999990 /*Czech Republic*/
 replace HhldInc=DK_INC*0.172637746/12 if Country==208 & DK_INC<999990 /*Denmark*/
-replace HhldInc=FI_INC*1.284861505 if Country==246 & FI_INC<999990 /*Finland --  it only contains information for one person, drop from the analysis*/
+replace HhldInc=FI_INC*1.284861505 if Country==246 & FI_INC<999990 /*Finland*/
 replace HhldInc=FR_INC*1.284861505 if Country==250 & FR_INC<999990 /*France*/
 replace HhldInc=DE_INC*1.284861505 if Country==276 & DE_INC<999990 /*Germany*/
 replace HhldInc=GB_INC*1.579661542 if Country==826 & ///
@@ -172,7 +172,7 @@ replace HhldInc=PH_INC*0.01913837 if Country==608 & PH_INC<999990 /*Philippines*
 replace HhldInc=PL_INC*0.307074191 if Country==616 & ///
 	PL_INC<999990 /*Poland*/
 replace HhldInc=PT_INC*1.284861505 if Country==620 & PT_INC<999990 /*Portugal*/
-replace HhldInc=RU_INC*0.032425599 if Country==643 & RU_INC<999990 /*Russia -- there are many zero observations*/
+replace HhldInc=RU_INC*0.032425599 if Country==643 & RU_INC<999990 /*Russia*/
 replace HhldInc=SK_INC*1.284861505 if Country==703 & SK_INC<999990 /*Slovakia*/
 replace HhldInc=SI_INC*1.284861505 if Country==705 & SI_INC<999990 /*Slovenia*/
 replace HhldInc=ES_INC*1.284861505 if Country==724 & ES_INC<999990 /*Spain*/

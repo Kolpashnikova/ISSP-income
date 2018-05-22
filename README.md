@@ -4,4 +4,8 @@ I know how many times you were on the verge of giving up and thought the ISSP da
 
 I hope you give me a shout-out in your acknowledgements section :) Enjoy
 
+What you do to the data on your next step- you need to decide yourself. It is in USD using the exchange rate for the year 2002 or 2012. 
+
+I also add a code to break down the data into quantiles for each country and year hear as well. 
+
 Kamila Kolpashnikova 2018 | Камила Колпашникова
